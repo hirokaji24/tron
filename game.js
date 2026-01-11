@@ -64,7 +64,7 @@ wallLengthSlider.oninput = function() {
 
 gridSizeSlider.oninput = function() {
     gridSizeText.innerText = "Current: " + gridSizeSlider.value;
-    GRID_WIDTH = 5 * gridSizeSlider.value;
+    GRID_WIDTH = 25 - (5 * gridSizeSlider.value);
     setCookie("gridsize",gridSizeSlider.value);
 }
     
